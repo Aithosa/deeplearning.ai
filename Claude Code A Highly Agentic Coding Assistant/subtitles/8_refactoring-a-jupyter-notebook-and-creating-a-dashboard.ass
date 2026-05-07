@@ -264,13 +264,13 @@ Dialogue: 0,0:09:50.00,0:09:53.00,Default,,0,0,0,,{\fs80}我这里还没有 stre
 Dialogue: 0,0:09:53.00,0:09:54.00,Default,,0,0,0,,{\fs80}所以我意识到，为了\N{\fs50}So I can see here, in
 Dialogue: 0,0:09:54.00,0:09:56.00,Default,,0,0,0,,{\fs80}让一切运行起来，\N{\fs50}order to get everything up and running,
 Dialogue: 0,0:09:56.00,0:09:57.00,Default,,0,0,0,,{\fs80}我需要安装这些依赖项。\N{\fs50}I need to install these dependencies.
-Dialogue: 0,0:09:57.00,0:09:59.00,Default,,0,0,0,,{\fs80}So let's go ahead and do that.\N{\fs50}So let's go ahead and do that.
+Dialogue: 0,0:09:57.00,0:09:59.00,Default,,0,0,0,,{\fs80}那我们就开始做吧。\N{\fs50}So let's go ahead and do that.
 Dialogue: 0,0:09:59.00,0:10:01.00,Default,,0,0,0,,{\fs80}我将运行 pip install 命令，\N{\fs50}I'll run my pip install command,
 Dialogue: 0,0:10:01.00,0:10:04.00,Default,,0,0,0,,{\fs80}安装所有必要的依赖项，并确保\N{\fs50}install all the necessary dependencies and make sure
 Dialogue: 0,0:10:04.00,0:10:06.00,Default,,0,0,0,,{\fs80}在服务器加载时，应用程序中的\N{\fs50}that when the server loads, I don't have
 Dialogue: 0,0:10:06.00,0:10:08.00,Default,,0,0,0,,{\fs80}依赖项不会出现任何问题。\N{\fs50}any issues with the dependencies in this application.
 Dialogue: 0,0:10:08.00,0:10:11.00,Default,,0,0,0,,{\fs80}完成后，我将启动服务器。\N{\fs50}Once that's done, I'll go ahead and run my server.
-Dialogue: 0,0:10:11.00,0:10:14.00,Default,,0,0,0,,{\fs80}And I'll do that using the streamlit run command.\N{\fs50}And I'll do that using the streamlit run command.
+Dialogue: 0,0:10:11.00,0:10:14.00,Default,,0,0,0,,{\fs80}我将使用 streamlit run 命令来启动。\N{\fs50}And I'll do that using the streamlit run command.
 Dialogue: 0,0:10:14.00,0:10:16.00,Default,,0,0,0,,{\fs80}让我们输入 streamlit\N{\fs50}So let's go ahead and type in streamlit
 Dialogue: 0,0:10:16.00,0:10:17.00,Default,,0,0,0,,{\fs80}run 以及我们 Python 文件的名称。\N{\fs50}run and the name of our Python file.
 Dialogue: 0,0:10:17.00,0:10:20.00,Default,,0,0,0,,{\fs80}就像它在这里建议的一样。\N{\fs50}Python file just like it suggests right here.

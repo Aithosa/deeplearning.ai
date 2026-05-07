@@ -199,7 +199,7 @@ Dialogue: 0,0:08:44.00,0:08:46.00,Default,,0,0,0,,{\fs80}CLAUDE.md 文件。\N{\
 Dialogue: 0,0:08:46.00,0:08:49.00,Default,,0,0,0,,{\fs80}在 VS Code 中使用像\N{\fs50}What's really nice about using a tool
 Dialogue: 0,0:08:49.00,0:08:51.00,Default,,0,0,0,,{\fs80}Claude Code 这样的工具，非常棒的一点是，\N{\fs50}like Claude Code with Visual Studio Code,
 Dialogue: 0,0:08:51.00,0:08:54.00,Default,,0,0,0,,{\fs80}当我看到文件发生更改时，\N{\fs50}is that as I see changes to files,
-Dialogue: 0,0:08:54.00,0:08:56.00,Default,,0,0,0,,{\fs80}I can see those visually in my editor.\N{\fs50}I can see those visually in my editor.
+Dialogue: 0,0:08:54.00,0:08:56.00,Default,,0,0,0,,{\fs80}我可以在编辑器中直观地看到它们。\N{\fs50}I can see those visually in my editor.
 Dialogue: 0,0:08:56.00,0:09:00.00,Default,,0,0,0,,{\fs80}每当我在 Claude Code 中使用工具时，\N{\fs50}And anytime that I am using a tool in Claude Code,
 Dialogue: 0,0:09:00.00,0:09:02.00,Default,,0,0,0,,{\fs80}它都会向我请求许可。\N{\fs50}it's going to ask me for permissions.
 Dialogue: 0,0:09:02.00,0:09:05.00,Default,,0,0,0,,{\fs80}这种“人在回路”的机制非常重要，\N{\fs50}This mission critical human in the loop is really important
