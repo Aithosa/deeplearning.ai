@@ -1,0 +1,9 @@
+[submodule "Claude Code A Highly Agentic Coding Assistant/code/ragchatbot-codebase"]
+	path = Claude Code A Highly Agentic Coding Assistant/code/ragchatbot-codebase
+	url = https://github.com/https-deeplearning-ai/ragchatbot-codebase.git
+[submodule "Claude Code A Highly Agentic Coding Assistant/code/sc-claude-code-files"]
+	path = Claude Code A Highly Agentic Coding Assistant/code/sc-claude-code-files
+	url = https://github.com/https-deeplearning-ai/sc-claude-code-files.git
+[submodule "Claude Code A Highly Agentic Coding Assistant/code/starting-ragchatbot-codebase"]
+	path = Claude Code A Highly Agentic Coding Assistant/code/starting-ragchatbot-codebase
+	url = https://github.com/https-deeplearning-ai/starting-ragchatbot-codebase.git
