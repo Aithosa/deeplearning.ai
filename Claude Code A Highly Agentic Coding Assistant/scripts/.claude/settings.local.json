@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Read(//d/OneDrive/Notes/deeplearning.ai/**)",
-      "Bash(cat .gitmodules)"
-    ]
-  }
-}
