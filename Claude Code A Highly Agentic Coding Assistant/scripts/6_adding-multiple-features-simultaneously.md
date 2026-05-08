@@ -4,7 +4,7 @@
 
 回到 Claude 界面。正如我们之前看到的，Claude Code 内置了相当多的斜杠命令（slash commands），但你也可以创建自己的自定义命令。
 
-**要创建自定义命令，请在 `.claude` 文件夹内新建一个名为 `commands` 的文件夹。**在里面，我们将创建一个 Markdown 文件，文件名就是你想要的命令名。我在这里要创建的命令叫作 `implement-feature`。所以我创建了一个名为 `implement-feature.md` 的文件。
+**要创建自定义命令，请在 `.claude` 文件夹内新建一个名为 `commands` 的文件夹。**在里面，**我们将创建一个 Markdown 文件，文件名就是你想要的命令名**。我在这里要创建的命令叫作 `implement-feature`。所以我创建了一个名为 `implement-feature.md` 的文件。
 
 在这个文件中，你可以放入任何你想要的内容。但我想向你展示一个非常特别的功能：**如果你想向自定义命令传递任何参数，可以使用 `$ARGUMENTS` 变量来引用它**。
 
@@ -24,21 +24,21 @@
 
 现在自定义命令已经设置好了，让我们聊聊如何与 Claude Code 并行工作。与其只是打开多个终端窗口并直接在这个代码库上操作，我们将使用 Git 来确保在拥有多个 Claude Code 实例时不会覆盖现有文件。
 
-如果不加管理，我可能会有两个不同的 Claude Code 实例在操作同一个文件，这会导致覆盖、产生 Bug 以及相当大的混乱。幸运的是，Git 有一个非常棒的功能叫作 **worktrees**。Worktrees 允许我基本上创建代码库的副本，在隔离环境中操作，最后再将它们合并在一起。事实上，我还可以利用 Claude 来协助合并和管理这些 worktrees。
+如果不加管理，我可能会有两个不同的 Claude Code 实例在操作同一个文件，这会导致覆盖、产生 Bug 以及相当大的混乱。幸运的是，**Git 有一个非常棒的功能叫作 worktrees**。Worktrees 允许我基本上创建代码库的副本，在隔离环境中操作，最后再将它们合并在一起。事实上，我还可以利用 Claude 来协助合并和管理这些 worktrees。
 
-要开始使用 worktrees，我首先创建一个名为 `.trees` 的文件夹。在这个文件夹里，我将添加几个 worktrees。使用 `git worktree add` 命令，指定文件夹以及我想要的 worktree 名称。我们将第一个命名为 `ui_feature`，第二个命名为 `testing_feature`，最后第三个叫作 `quality_feature`。
+要开始使用 worktrees，我首先创建一个名为 `.trees` 的文件夹。在这个文件夹里，我将添加几个 worktrees。**使用 `git worktree add` 命令，指定文件夹以及我想要的 worktree 名称。**我们将第一个命名为 `ui_feature`，第二个命名为 `testing_feature`，最后第三个叫作 `quality_feature`。
 
 ```bash
 # 创建一个名为 .trees 的文件夹
 mkdir .trees
 
-# 创建 ui_feature worktree
+# 创建 ui_feature worktree - 基于main分支
 git worktree add .trees/ui_feature main
 
-# 创建 testing_feature worktree
+# 创建 testing_feature worktree - 基于main分支
 git worktree add .trees/testing_feature main
 
-# 创建 quality_feature worktree
+# 创建 quality_feature worktree - 基于main分支
 git worktree add .trees/quality_feature main
 
 # 确认已创建所有 worktrees
@@ -75,9 +75,11 @@ git branch -a
 
 现在我已经完成了这三个工作区的提交，可以回到 `main` 分支进行合并了。我关闭这些终端环境，回到主终端。
 
-现在我要求 Claude：使用 `git merge` 命令合并 `.trees` 文件夹中的所有 worktrees，并修复可能存在的任何冲突。让 Claude Code 合并这些特定的 trees 并确保它们按预期工作。
+现在我要求 Claude：**使用 `git merge` 命令合并 `.trees` 文件夹中的所有 worktrees，并修复可能存在的任何冲突。**让 Claude Code 合并这些特定的 trees 并确保它们按预期工作。
 
 我们可以看到有三个可用的 worktrees。我们开始逐一合并。看起来 `testing_feature` 没有冲突。接着合并 `ui_feature`。再次强调，我们可以自己写这些命令，但 Claude Code 知道该怎么做。
+
+> 每一个命令都是模糊的，意味着会花费token。
 
 最后合并 `quality_feature` 分支。在这里，我们可以看到在某个特定文件中存在冲突。我们将让 Claude Code 分析这些冲突并完成合并。当你不想每次都手动处理细小的合并冲突时，这非常有用。
 
