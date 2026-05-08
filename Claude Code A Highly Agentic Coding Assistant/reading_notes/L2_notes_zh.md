@@ -700,4 +700,5 @@ uv run uvicorn app:app --reload --port 8000
 | `ESC`      | 中断 Claude 以重新引导或纠正它 |
 | `ESC ESC`  | 将对话回溯到较早的时间点       |
 
-你可以在 Claude Code 中使用常规的 Bash 命令，但命令需要以 `!` 开头（例如：`!pwd`）。你可以输入 `exit` 退出 Claude Code。
+你可以在 Claude Code 中使用常规的 Bash 命令，但命令需要以 `!` 开头（例如：`!pwd`）。
+你可以输入 `exit` 退出 Claude Code。
